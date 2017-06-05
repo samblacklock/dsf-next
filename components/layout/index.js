@@ -14,14 +14,15 @@ class Layout extends Component {
   render() {
     return (
       <site-content>
-        <style jsx> {`
-          $color: blue;
+        <style jsx global> {`
+          @import '../../styles/variables.scss';
 
-          h1 {
-            color: $color;
+          body {
+            background: $color;
           }
         `}
         </style>
+
         <Head>
           <title>{ this.title }</title>
           <meta charSet='utf-8' />
