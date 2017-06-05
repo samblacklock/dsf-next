@@ -12,7 +12,10 @@
   },
   "postcss": {
     "plugins": {
-      "precss": {}
+      "postcss-css-reset": {}
     }
+  },
+  "devDependencies": {
+    "postcss-css-reset": "^1.0.2"
   }
 }

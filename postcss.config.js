@@ -1,5 +1,5 @@
 module.exports = () => ({
   plugins: {
-    'postcss-precss': {}
+    'postcss-css-reset': {}
   }
 })

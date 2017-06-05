@@ -14,20 +14,18 @@ class Layout extends Component {
   render() {
     return (
       <site-content>
-        <style jsx global> {`
-          @import '../../styles/variables.scss';
-
-          body {
-            background: $color;
-          }
-        `}
+        <style jsx global>
+          {`
+            html {
+              color: red;
+            }
+          `}
         </style>
 
         <Head>
           <title>{ this.title }</title>
           <meta charSet='utf-8' />
           <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-          <link rel="stylesheet" href="/static/index.css" />
         </Head>
 
         <Header />
