@@ -14,6 +14,14 @@ class Layout extends Component {
   render() {
     return (
       <site-content>
+        <style jsx> {`
+          $color: blue;
+
+          h1 {
+            color: $color;
+          }
+        `}
+        </style>
         <Head>
           <title>{ this.title }</title>
           <meta charSet='utf-8' />
@@ -24,6 +32,7 @@ class Layout extends Component {
         <Header />
 
         <main-content>
+          <h1>bumsex</h1>
           { this.children }
         </main-content>
 
