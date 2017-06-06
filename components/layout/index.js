@@ -1,8 +1,7 @@
 import { Component } from 'react';
-import Link from 'next/link'
-import Head from 'next/head'
 import Header from './header/index';
 import Footer from './footer/index';
+import styles from 'styles/global.scss';
 
 class Layout extends Component {
   constructor({ children, title = 'Durham Stoves and Fires' }) {
@@ -14,26 +13,12 @@ class Layout extends Component {
   render() {
     return (
       <site-content>
-        <style jsx global>
-          {`
-            html {
-              color: red;
-            }
-          `}
-        </style>
-
-        <Head>
-          <title>{ this.title }</title>
-          <meta charSet='utf-8' />
-          <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-        </Head>
+        <style dangerouslySetInnerHTML={{ __html: styles }}></style>
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" />
 
         <Header />
 
-        <main-content>
-          <h1>lol</h1>
-          { this.children }
-        </main-content>
+        { this.children }
 
         <Footer />
       </site-content>

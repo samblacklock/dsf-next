@@ -1,0 +1,37 @@
+@import 'normalize.css';
+@import '_variables';
+@import '_mixins';
+
+// Components
+@import '../components/layout/header/styles';
+@import '../components/layout/header/navigation/styles';
+@import '../components/hero/styles';
+
+body {
+  background: $white;
+  color: $black;
+  height: 100vh;
+}
+
+site-content {
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+section {
+  @include container;
+}

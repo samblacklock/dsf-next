@@ -1,21 +1,25 @@
 {
   "dependencies": {
+    "autoprefixer": "6.7.6",
+    "babel-plugin-module-resolver": "2.5.0",
+    "babel-plugin-wrap-in-js": "^1.1.0",
+    "glob": "7.1.1",
     "next": "^2.4.1",
+    "node-sass": "^4.4.0",
+    "normalize.css": "5.0.0",
+    "postcss-easy-import": "2.0.0",
+    "postcss-loader": "1.3.3",
+    "raw-loader": "^0.5.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "styled-jsx-postcss": "^0.2.0"
+    "sass-loader": "^4.1.1"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
   },
-  "postcss": {
-    "plugins": {
-      "postcss-css-reset": {}
-    }
-  },
   "devDependencies": {
-    "postcss-css-reset": "^1.0.2"
+    "babel-plugin-inline-react-svg": "^0.4.0"
   }
 }
