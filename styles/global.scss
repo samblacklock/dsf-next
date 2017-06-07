@@ -6,10 +6,15 @@
 @import '../components/layout/header/styles';
 @import '../components/layout/header/navigation/styles';
 @import '../components/hero/styles';
+@import '../components/color-slash/styles';
+
+// Pages
+@import '../pages/index.scss';
 
 body {
   background: $white;
   color: $black;
+  font-family: 'Lato', sans-serif;
   height: 100vh;
 }
 
@@ -18,8 +23,30 @@ site-content {
   flex-direction: column;
 }
 
+section {
+  @include container;
+}
+
 h1, h2 {
   font-family: 'Abril Fatface', cursive;
+
+  &.stylized-heading {
+    > span {
+      display: block;
+
+      &.large {
+        font-size: calc(1em * 1.5);
+      }
+
+      &.small {
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 a {
@@ -32,6 +59,17 @@ a {
   }
 }
 
-section {
-  @include container;
+button {
+  background: $white;
+  border: none;
+  color: $black;
+  letter-spacing: 2px;
+  padding: 0.6rem 0.8rem;
+  text-transform: uppercase;
+
+  &.primary {
+    background: none;
+    border: 2px solid $white;
+    color: $white;
+  }
 }

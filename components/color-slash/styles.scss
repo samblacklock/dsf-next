@@ -1,0 +1,36 @@
+.color-slash {
+  align-items: center;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+  position: relative;
+  margin: 7rem 0;
+  width: 100%;
+  // transform-origin: right top;
+  // transform: skewY(3deg);
+
+  &::before, &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+  }
+
+  &::before {
+    bottom: 0;
+    transform-origin: right top;
+    transform: skewY(3deg);
+  }
+
+  &::after {
+    bottom: -3rem;
+    transform-origin: right bottom;
+    transform: skewY(-2deg);
+  }
+}

@@ -16,8 +16,12 @@ nav {
       align-items: center;
       display: flex;
 
-      a {
+      .index & a {
         color: $white;
+
+        &:hover {
+          color: $black; 
+        }
       }
     }
   }

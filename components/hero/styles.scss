@@ -1,20 +1,29 @@
 .hero-container {
   align-items: center;
-  background: $black;
-  color: $white;
+  background: linear-gradient(to top right, transparentize(#ff7e5f, 0.1) 0%, transparentize(#feb47b, 0.2) 100%), url('http://www.visionfires.co.uk/wp-content/uploads/2015/10/TL140_trimless.jpg') center;
+  background-size: cover;
+  color: $black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  overflow: hidden;
-  height: 30rem;
+  margin-bottom: 5rem;
+  position: relative;
+  height: 35rem;
   width: 100%;
-
-  video {
-    width: 50%;
-    height: auto;
-  }
 
   h1 {
     font-size: 3rem;
+  }
+
+  &::after{
+    content: '';
+    width: 100%;
+    height: 100%;
     position: absolute;
+    background: inherit;
+    z-index: -1;
+    bottom: 0;
+    transform-origin: right bottom;
+    transform: skewY(-3deg);
   }
 }

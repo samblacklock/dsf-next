@@ -3,3 +3,13 @@
   max-width: 1024px;
   width: 100%;
 }
+
+@mixin column-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin two-col {
+  width: 50%;
+  padding: 0.5rem;
+}

@@ -4,7 +4,9 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        Dis da footer pal
+        <section>
+          Durham Stoves and Fireplaces
+        </section>
       </footer>
     )
   }
