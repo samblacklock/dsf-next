@@ -33,4 +33,17 @@
     transform-origin: right bottom;
     transform: skewY(-2deg);
   }
+
+  &.flat {
+    height: 15rem;
+    margin-top: 0;
+
+    &::before {
+      transform: skew(0);
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
 }
