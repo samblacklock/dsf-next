@@ -1,8 +1,9 @@
 import { Component } from 'react';
 import Layout from '../components/layout/index';
 import ColorSlash from '../components/color-slash/index';
+import Product from '../components/product/index';
 
-import ContentAPI from '../content.js';
+import FetchContent from '../content.js';
 
 const colorSlashContent = (
   <div>
@@ -14,10 +15,10 @@ const colorSlashContent = (
 )
 
 class ProductsPage extends Component {
-  static async getInitialProps() {
-    ContentAPI.getEntries()
-      .then(res => { res.items })
-      .catch(console.error);
+  static async getInitialProps () {
+    const res = await FetchContent;
+    this.data = res.bodyUsed ? this.data : await res.json();
+    return { items: this.data.items, assets: this.data.includes.Asset }
   }
 
   render() {
@@ -25,7 +26,11 @@ class ProductsPage extends Component {
       <Layout>
         <ColorSlash style='flat' content={ colorSlashContent } />
         <section>
-          <h2>this is the producst page :)</h2>
+          {
+            this.props.items ?
+            this.props.items.map((item, index) => <Product key={ index } item={ item } assets={ this.props.assets }/>) :
+            <h3>No items to show</h3>
+          }
         </section>
       </Layout>
     )

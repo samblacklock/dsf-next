@@ -1,8 +1,9 @@
-import { createClient } from 'contentful';
+import fetch from 'isomorphic-fetch';
 
-const client = createClient({
-  space: 'pisf6zzt2wph',
-  accessToken: '03e973bf485cbf59d0aa2a0569b8b901e8e100c1d2128dcf917bb3234c4fb393'
-});
+const baseUrl = 'https://cdn.contentful.com';
+const space = 'pisf6zzt2wph';
+const accessToken = '03e973bf485cbf59d0aa2a0569b8b901e8e100c1d2128dcf917bb3234c4fb393';
 
-export default client;
+const fetchData = fetch(`${baseUrl}/spaces/${space}/entries?access_token=${accessToken}`);
+
+export default fetchData;
