@@ -1,0 +1,24 @@
+.product {
+  @include column-layout;
+
+  margin: 1rem 0;
+
+  .description, .image-wrapper {
+    @include two-col;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+
+  &:nth-of-type(odd) {
+    .image-wrapper {
+      order: 0;
+    }
+
+    .description {
+      order: 1;
+    }
+  }
+}
