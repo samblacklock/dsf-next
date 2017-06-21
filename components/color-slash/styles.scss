@@ -1,14 +1,13 @@
 .color-slash {
   align-items: center;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background: linear-gradient(to right, $secondary-color, $tertiary-color);
   color: $black;
   display: flex;
   flex-direction: column;
   height: 10rem;
   justify-content: center;
-  margin-bottom: 5rem;
   position: relative;
-  margin: 7rem 0;
+  margin: 3rem 0;
   width: 100%;
   // transform-origin: right top;
   // transform: skewY(3deg);
@@ -45,5 +44,9 @@
     &::after {
       bottom: 0;
     }
+  }
+
+  @media (min-width: $medium-breakpoint) {
+    margin: 7rem 0;
   }
 }

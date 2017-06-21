@@ -5,7 +5,8 @@ class Footer extends Component {
     return (
       <footer>
         <section>
-          Durham Stoves and Fireplaces
+          <span>Durham Stoves and Fireplaces</span>
+          <span>Belmont Industrial Estate, DH1 1ST</span>
         </section>
       </footer>
     )

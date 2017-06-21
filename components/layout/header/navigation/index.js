@@ -1,15 +1,15 @@
 import { Component } from 'react';
+import Link from 'next/link';
 
 class Navigation extends Component {
   render() {
     return (
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/products">Products</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/location">Location</a></li>
+          <li><Link prefetch href="/"><a>Home</a></Link></li>
+          <li><Link prefetch href="/products"><a>Products</a></Link></li>
+          <li><Link prefetch href="/contact"><a>Contact</a></Link></li>
+          <li><Link prefetch href="/location"><a>Location</a></Link></li>
         </ul>
       </nav>
     )

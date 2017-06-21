@@ -8,9 +8,16 @@
 @import '../components/hero/styles';
 @import '../components/color-slash/styles';
 @import '../components/product/styles';
+@import '../components/form/styles';
+@import '../components/layout/footer/styles';
 
 // Pages
-@import '../pages/index.scss';
+@import '../pages/styles/index.scss';
+@import '../pages/styles/location.scss';
+
+* {
+  box-sizing: border-box; 
+}
 
 body {
   background: $white;
@@ -22,6 +29,7 @@ body {
 site-content {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 section {
@@ -73,4 +81,8 @@ button {
     border: 2px solid $white;
     color: $white;
   }
+}
+
+address {
+  font-style: normal;
 }

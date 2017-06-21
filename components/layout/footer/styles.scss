@@ -1,3 +1,9 @@
 footer {
+  height: 2rem;
 
+  section {
+    @include column-layout;
+
+    justify-content: space-between;
+  }
 }

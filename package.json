@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "autoprefixer": "6.7.6",
+    "axios": "^0.16.2",
     "babel-plugin-module-resolver": "2.5.0",
     "babel-plugin-wrap-in-js": "^1.1.0",
     "glob": "7.1.1",
@@ -13,8 +14,11 @@
     "raw-loader": "^0.5.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-gmaps": "^1.6.0",
+    "react-map-gl": "^2.0.3",
     "sass-loader": "^4.1.1",
-    "styled-jsx": "^1.0.5"
+    "styled-jsx": "^1.0.5",
+    "validator": "^7.0.0"
   },
   "scripts": {
     "dev": "next",

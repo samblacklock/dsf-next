@@ -1,0 +1,32 @@
+.index {
+  .intro {
+    @include column-layout;
+
+    min-height: 30rem;
+
+    .intro-text, .intro-image {
+      @include two-col;
+    }
+
+    .intro-image {
+      text-align: center;
+      
+      img {
+        border-image: linear-gradient(to top right, #ff7e5f, #feb47b);
+        border-width: 0.1rem;
+        height: auto;
+        margin: 0 auto;
+        max-width: 30rem;
+        width: 100%;
+      }
+    }
+  }
+
+  .color-slash {
+    .small {
+      padding: 0;
+    }
+
+    text-align: center;
+  }
+}

@@ -1,0 +1,100 @@
+form {
+  input, label, textarea {
+    background: none;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  input, textarea {
+    border: 0.05rem solid transparentize($black, 0.85);
+    margin: 1rem 0;
+    padding: 1rem 3rem 1rem 1rem;
+
+    &:focus {
+      border-width: 0.2rem;
+      outline: none;
+    }
+  }
+
+  label {
+    margin: 1rem 0 2rem;
+  }
+
+  .validation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    &::before, &::after {
+      position: absolute;
+      right: 1rem;
+    }
+
+    &.valid {
+      input, textarea {
+        border-bottom: 0.2rem solid $success;
+      }
+
+      &::after {
+        content: '\2714';
+      }
+    }
+
+    &.invalid {
+      input, textarea {
+        border-bottom: 0.2rem solid $error;
+      }
+
+      &::after {
+        content: '\274C';
+      }
+    }
+  }
+
+  input {
+    height: 3.5rem;
+  }
+
+  textarea {
+    height: 5rem;
+  }
+
+  flex: 1;
+  max-width: 80%;
+
+  .alert {
+    height: auto;
+    padding: 1rem;
+    position: relative;
+
+    &.success {
+      background: $success;
+      border-color: $success;
+      color: rgba($success, 50%);
+    }
+
+    &.error {
+      background: $error;
+      border-color: $error;
+      color: rgba($error, 30%);
+    }
+
+    button {
+      background: none;
+      color: inherit;
+      position: absolute;
+      right: 0.3rem;
+      top: 0.3rem;
+    }
+  }
+}
+
+.form-wrapper {
+  @include column-layout;
+
+  align-items: center;
+  justify-content: center;
+}

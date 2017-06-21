@@ -14,8 +14,10 @@ class Layout extends Component {
   render() {
     return (
       <site-content class={ this.cssClass }>
-        <style dangerouslySetInnerHTML={{ __html: styles }}></style>
+        <title>{ this.title }</title>
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style dangerouslySetInnerHTML={{ __html: styles }}></style>
 
         <Header />
 

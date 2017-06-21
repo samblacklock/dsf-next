@@ -1,8 +1,13 @@
 // Colors
 
 $primary-color: #BF2517;
-$secondary-color: #D95829;
-$tertiary-color: #D97540;
+$secondary-color: #ff7e5f;
+$tertiary-color: #feb47b;
+
+$success: transparentize(green, 0.8);
+$error: transparentize(red, 0.8);
 
 $white: #FFFFFE;
 $black: #000;
+
+$medium-breakpoint: 1024px;
