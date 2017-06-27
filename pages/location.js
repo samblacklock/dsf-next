@@ -24,8 +24,11 @@ class Location extends Component {
     map.setOptions({
       disableDefaultUI: true
     });
-  }
 
+    google.maps.event.addDomListener(window, 'resize', function() {
+      map.setCenter(coords);
+    });
+  }
 
   render() {
     return (
@@ -47,7 +50,8 @@ class Location extends Component {
             lng={coords.lng}
             zoom={12}
             params={params}
-            onMapCreated={this.onMapCreated}>
+            onMapCreated={this.onMapCreated}
+            resize={this.onResize}>
             <Marker
               lat={coords.lat}
               lng={coords.lng}

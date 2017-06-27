@@ -3,8 +3,8 @@ form {
     background: none;
     box-sizing: border-box;
     display: block;
-    width: 100%;
     max-width: 100%;
+    width: 100%;
   }
 
   input, textarea {
@@ -62,9 +62,6 @@ form {
     height: 5rem;
   }
 
-  flex: 1;
-  max-width: 80%;
-
   .alert {
     height: auto;
     padding: 1rem;
@@ -89,6 +86,13 @@ form {
       right: 0.3rem;
       top: 0.3rem;
     }
+  }
+
+  flex: 1;
+  width: 100%;
+
+  @media (min-width: $medium-breakpoint) {
+    max-width: 80%;
   }
 }
 

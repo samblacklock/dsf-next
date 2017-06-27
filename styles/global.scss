@@ -16,7 +16,7 @@
 @import '../pages/styles/location.scss';
 
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
@@ -37,18 +37,16 @@ section {
 }
 
 h1, h2 {
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Righteous';
 
   &.stylized-heading {
+    text-align: center;
+
     > span {
       display: block;
 
       &.large {
         font-size: calc(1em * 1.5);
-      }
-
-      &.small {
-        padding-left: 1rem;
       }
     }
   }
@@ -65,6 +63,10 @@ a {
 
   &:hover {
     color: $primary-color;
+  }
+
+  &:visited {
+    color: $black;
   }
 }
 
@@ -85,4 +87,21 @@ button {
 
 address {
   font-style: normal;
+}
+
+.flame-letter {
+  background: url('../static/flame.png') center no-repeat;
+  background-size: contain;
+  color: transparent;
+  text-shadow: none;
+}
+
+.hetas-logo {
+  height: auto;
+  width: 5rem;
+}
+
+.gas-safe-logo {
+  height: auto;
+  width: 7rem;
 }

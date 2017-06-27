@@ -1,19 +1,28 @@
+$gradient-light: transparentize($white, 0.2);
+$gradient-dark: transparentize($secondary-color, 0.1);
+
 .hero-container {
   align-items: center;
-  background: linear-gradient(to top right, transparentize(#ff7e5f, 0.1) 0%, transparentize(#feb47b, 0.2) 100%), url('http://www.visionfires.co.uk/wp-content/uploads/2015/10/TL140_trimless.jpg') center;
+  background: linear-gradient(to top right, $gradient-dark 0%, $gradient-light 100%), url('http://www.visionfires.co.uk/wp-content/uploads/2015/10/TL140_trimless.jpg') center;
   background-size: cover;
   color: $black;
   display: flex;
   flex-direction: column;
+  height: 35rem;
   justify-content: center;
   margin-bottom: 5rem;
   padding: 2rem;
   position: relative;
-  height: 35rem;
+  text-align: center;
   width: 100%;
 
   h1 {
     font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin: 1rem;
   }
 
   &::after{
@@ -26,5 +35,9 @@
     bottom: 0;
     transform-origin: right bottom;
     transform: skewY(-3deg);
+  }
+
+  .stylized-heading {
+    text-shadow: 0 0 10rem $white;
   }
 }

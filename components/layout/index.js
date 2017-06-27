@@ -15,7 +15,7 @@ class Layout extends Component {
     return (
       <site-content class={ this.cssClass }>
         <title>{ this.title }</title>
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:300" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300|Righteous" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style dangerouslySetInnerHTML={{ __html: styles }}></style>
 

@@ -5,10 +5,11 @@ class Hero extends Component {
     return (
       <div className='hero-container'>
         <h1 className='stylized-heading'>
-          <span className='large'>Durham Stoves</span>
+          <span className='large'>Durham St<span className='flame-letter'>o</span>ves</span>
           <span className='small'>& Fireplaces</span>
         </h1>
-        <strong>Suppliers of Vision fires in the North East</strong>
+        <h3>Design, Sales and Installation</h3>
+        <strong>Gas & Electrical Fires / Multi-Fuel / Central Heating</strong>
       </div>
     )
   }

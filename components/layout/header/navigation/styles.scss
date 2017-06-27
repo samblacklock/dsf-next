@@ -1,10 +1,6 @@
 nav {
   width: 100%;
 
-  svg {
-    width: 3rem;
-  }
-
   ul {
     display: flex;
     justify-content: space-between;
@@ -16,11 +12,18 @@ nav {
       align-items: center;
       display: flex;
 
-      .index & a {
-        color: $white;
+      &.logo {
+        background: url('../../static/flame.png') center no-repeat;
+        background-size: 50%;
+      }
 
-        &:hover {
-          color: $black; 
+      .index & {
+        a {
+          color: $black;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }

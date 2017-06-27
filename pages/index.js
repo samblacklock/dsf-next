@@ -21,10 +21,9 @@ class IndexPage extends Component {
 
         <section className="intro">
           <div className="intro-text">
-            <h2>The finest contemporary fireplaces and stoves in the North East</h2>
+            <h2>The best fireplaces and stoves in the North East</h2>
             <p>
-              With over 100 years' experience in the fireplace industry, our
-              expert team at the Newcastle Fireplace Centre can offer a complete
+              Our team of experts at Durham Stoves and Fireplaces provide you with a complete
               fireplace and stove service.
             </p>
             <p>

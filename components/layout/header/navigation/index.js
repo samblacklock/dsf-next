@@ -6,6 +6,7 @@ class Navigation extends Component {
     return (
       <nav>
         <ul>
+          <li className="logo"><Link prefetch href="/"><a><h2>DSF</h2></a></Link></li>
           <li><Link prefetch href="/"><a>Home</a></Link></li>
           <li><Link prefetch href="/products"><a>Products</a></Link></li>
           <li><Link prefetch href="/contact"><a>Contact</a></Link></li>
