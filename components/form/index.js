@@ -14,7 +14,7 @@ class Form extends React.Component {
 
     this.state = this.getInitialState();
 
-    this.fromAddress = 'smashleblock@g*m*a*i*l.com'.replace(/\*/g, '');
+    this.fromAddress = 'durhamstoves@g*m*a*i*l.com'.replace(/\*/g, '');
   }
 
   getInitialState() {

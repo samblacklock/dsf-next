@@ -10,7 +10,7 @@
 
     .intro-image {
       text-align: center;
-      
+
       img {
         border-image: linear-gradient(to top right, #ff7e5f, #feb47b);
         border-width: 0.1rem;
@@ -28,5 +28,27 @@
     }
 
     text-align: center;
+  }
+
+  .logo-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .hetas-logo, .gas-safe-logo {
+      display: none;
+    }
+
+    @media (min-width: $medium-breakpoint) {
+      flex-direction: row;
+
+      .hetas-logo, .gas-safe-logo {
+        display: block;
+        height: auto;
+        width: 40%;
+      }
+    }
+
   }
 }

@@ -11,6 +11,8 @@ header {
   z-index: 1;
 
   .index & {
+    left: 50%;
     position: absolute;
+    transform: translateX(-50%);
   }
 }

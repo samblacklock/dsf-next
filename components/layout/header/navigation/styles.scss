@@ -26,6 +26,14 @@ nav {
           }
         }
       }
+
+      &:first-of-type {
+        display: none;
+        
+        @media (min-width: $medium-breakpoint) {
+          display: flex;
+        }
+      }
     }
   }
 }

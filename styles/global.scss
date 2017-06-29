@@ -57,32 +57,42 @@ h2 {
 }
 
 a {
+  color: $black;
   position: relative;
   text-decoration: none;
   transition: color 0.2s;
 
-  &:hover {
-    color: $primary-color;
-  }
-
   &:visited {
     color: $black;
   }
+
+  &:hover {
+    color: $primary-color;
+  }
 }
 
-button {
+button, a.button, input[type=submit] {
   background: $white;
   border: none;
   color: $black;
   letter-spacing: 2px;
   padding: 0.6rem 0.8rem;
-  text-transform: uppercase;
+
+  &:hover {
+    box-shadow: 0 0.1rem 0.3rem transparentize($black, 0.5);
+  }
 
   &.primary {
     background: none;
     border: 2px solid $white;
     color: $white;
   }
+
+}
+
+input[type=submit] {
+  background: $black;
+  color: $white;
 }
 
 address {
@@ -94,14 +104,4 @@ address {
   background-size: contain;
   color: transparent;
   text-shadow: none;
-}
-
-.hetas-logo {
-  height: auto;
-  width: 5rem;
-}
-
-.gas-safe-logo {
-  height: auto;
-  width: 7rem;
 }
